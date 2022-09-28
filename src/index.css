@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --reach-dialog: 1;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+@layer components {
+  .button {
+    @apply px-4 py-2  text-sm font-medium text-white bg-violet-600 border border-transparent rounded-md shadow-sm hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-offset-2;
+  }
+
+  .input {
+    @apply mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-violet-500 focus:border-violet-500 sm:text-sm rounded-md;
+  }
+
+  .input__error {
+    @apply mt-1 block w-full pr-10 border-red-300 text-red-900 placeholder-red-300 focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm rounded-md;
+  }
+
+  .table__container {
+    @apply overflow-auto border rounded-md border-slate-200;
+  }
+
+  .table {
+    @apply w-full;
+  }
+
+  .table thead tr {
+    @apply border-b bg-slate-50 border-slate-200;
+  }
+
+  .table thead tr th {
+    @apply px-6 py-3 text-xs font-medium text-left text-slate-700;
+  }
+
+  .table tbody tr td {
+    @apply px-6 py-4 text-xs font-normal text-slate-800;
+  }
+
+  .table tbody tr:nth-child(odd) {
+    @apply bg-white;
+  }
+  .table tbody tr:nth-child(even) {
+    @apply bg-slate-50;
+  }
+}

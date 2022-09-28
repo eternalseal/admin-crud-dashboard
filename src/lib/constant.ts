@@ -1,0 +1,31 @@
+export const drugs = [
+  'Abacavir Sulfate',
+  'Abatacept',
+  'Abilify',
+  'Phenobarbital',
+  'Phenoxybenzamine',
+  'Phenylephrine HCl',
+  'Zolinza',
+  'Zolmitriptan',
+  'Zonalon',
+  'Zoster Vaccine Live',
+  'Zosyn',
+  'Zyclara',
+  'Zyflo',
+  'Zylet',
+  'Zyloprim',
+  'Zymaxid',
+] as const;
+
+export const category = [
+  'category 1',
+  'category 2',
+  'category 3',
+  'category 4',
+  'category 5',
+  'category 6',
+  'category 7',
+  'category 8',
+  'category 9',
+  'category 10',
+];
